@@ -1,10 +1,4 @@
-/**
- * @Name: useSize
- * @Descripttion: 实时获取size
- * @param {*}
- * @return {*}
- */
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from '@/hooks/react';
 export default function useSize() {
     const [size, setSize] = useState({
         width: document.documentElement.clientWidth,
@@ -24,3 +18,13 @@ export default function useSize() {
     }, [onResize]);
     return size;
 }
+// function useSizeDemo() {
+//     const size = useSize();
+//     return (
+//         <div>
+//             {size.width}
+//             <br />
+//             {size.height}
+//         </div>
+//     );
+// }

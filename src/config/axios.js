@@ -1,12 +1,4 @@
-/*
- * @Descripttion: axios config
- * @version:  1.0
- * @Author: jwy
- * @Date: 2020-12-04 16:39:10
- * @LastEditors: jwy
- * @LastEditTime: 2020-12-04 17:08:39
- */
-import axios from 'axios';
+import axios from '@/config/axios';
 
 const $axios = axios.create({
     timeout: 1000,

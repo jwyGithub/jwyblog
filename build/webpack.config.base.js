@@ -94,7 +94,18 @@ module.exports = {
                     },
                     {
                         loader: 'postcss-loader',
-                        options: { sourceMap: !isProd }
+                        options: {
+                            sourceMap: !isProd,
+                            postcssOptions: {
+                                plugins: [
+                                    require('postcss-pxtorem')({
+                                        rootValue: 100,
+                                        selectorBlackList: [], //过滤
+                                        propList: ['*']
+                                    })
+                                ]
+                            }
+                        }
                     },
                     {
                         loader: 'less-loader',

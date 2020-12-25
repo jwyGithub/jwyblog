@@ -1,10 +1,5 @@
 import React from 'react';
-import UseDebounceDemo from '@views/Demo/useScrollDemo/useScrollDemo';
-
+import Home from '@views/Home';
 export default function App() {
-    return (
-        <div>
-            <UseDebounceDemo />
-        </div>
-    );
+    return <Home />;
 }
