@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
-const useDebounce = (func: () => void, wait = 1000, deps = [], immediate = true) => {
-    let timeout = useRef<0>(null);
+const useDebounce = (func, wait = 1000, deps = [], immediate = true) => {
+    let timeout = useRef < 0 > null;
     useEffect(() => {
         if (timeout.current) clearTimeout(timeout.current);
         if (immediate && !timeout.current) {
@@ -17,7 +17,6 @@ const useDebounce = (func: () => void, wait = 1000, deps = [], immediate = true)
     }, deps);
     const cancel = () => {
         clearTimeout(timeout.current);
-        timeout.current = null;
     };
     return [cancel];
 };

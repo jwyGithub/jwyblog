@@ -14,7 +14,7 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
     entry: resolve(__dirname, '../src/index.tsx'),
     output: {
-        publicPath: '/',
+        publicPath: isProd ? './' : '/',
         filename: 'js/[name].[contenthash:8].js',
         path: resolve(__dirname, '../dist')
     },

@@ -28,7 +28,7 @@ const AuthorInfo = ({ onChangeStatus }: IAuthorInfoProps) => {
                 ))}
             </ul>
 
-            <p className='likeTing'>{useRandomData(toTing)}</p>
+            <p className='likeTing'>{useRandomData(toTing, true)}</p>
 
             <div className='start'>
                 <button onClick={onChangeStatus}>进入</button>

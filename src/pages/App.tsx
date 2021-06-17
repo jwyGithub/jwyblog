@@ -1,4 +1,4 @@
-import Welcome from '../components/Welcome/welcome';
+import Welcome from '@/components/Welcome/welcome';
 import Home from '@/pages/Home/Home';
 import './App.scss';
 

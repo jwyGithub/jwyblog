@@ -1,9 +1,20 @@
 import { useState } from 'react';
+import Header from '@/components/Header/Header';
 
-const Home = () => {
+import './Home.scss';
+
+const Home: React.FC = () => {
     return (
         <div className='home'>
-            <p></p>
+            <header className='home-header'>
+                <Header />
+            </header>
+            <main className='home-main'>
+                <aside>
+                    
+                </aside>
+                <article></article>
+            </main>
         </div>
     );
 };
