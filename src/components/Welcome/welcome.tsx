@@ -5,11 +5,11 @@ import './welcome.scss';
 
 const Welcome = () => {
     const [status, setStatus] = useState(true);
-    const onChangeStatus = () => {
+    const onChangeStatus: React.MouseEventHandler<HTMLButtonElement> = (): void => {
         setStatus(false);
     };
     return (
-        <div className={['welcome', status ? '' : 'hide'].join(' ')}>
+        <div className={['welcome', status ? '' : ' hide'].join('')}>
             <Background />
             <AuthorInfo onChangeStatus={onChangeStatus} />
         </div>

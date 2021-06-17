@@ -1,4 +1,10 @@
+import { memo } from 'react';
+import './Background.scss';
 const Background = () => {
-    return <div></div>;
+    return (
+        <div className='welcome-background'>
+            <div className='stars'></div>
+        </div>
+    );
 };
-export default Background;
+export default memo(Background);
